@@ -1,0 +1,186 @@
+/* 
+    Document   : copycenter
+    Created on : Oct 26, 2012, 9:41:33 AM
+    Author     : atpoirie
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+    #inner_container{
+        position:relative;
+        padding-top:5px;
+        margin:0 auto;   
+        padding-left: 5px;
+    }
+
+    select {
+        line-height: 1;
+    }
+    
+
+    #inner_container li{
+        list-style-type: circle;   
+        list-style-position: inside;
+        padding-bottom: 10px;
+        padding-left: 0px;
+    }
+    
+    #inner_container ul {
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    #inner_container a img{
+        border: none;
+        border-style: none;
+    }
+
+    form label{
+        margin: 5px 5px;
+    }
+    
+
+    input {
+        width: 200px;
+        font-size:1em;
+        outline:0;
+        line-height: 1;   
+    }
+    
+    input[type="radio"] {
+        width: 15px;
+    }
+    
+    input[type="checkbox"] {
+        width: 15px;
+    }
+    
+    select {
+        box-shadow: 0 0 5px #EBE6D9 inset;
+        width: 200px;
+        font-size: 1em;
+        outline: 0;
+    }
+
+    
+    input:focus {
+        border: 1px solid #9D6E56;
+        border-top-color: #9D6E56;
+        border-bottom-color: #9D6E56;
+        box-shadow: 0 0 5px #9D6E56;
+    }
+
+    select:focus {
+        border: 1px solid #9D6E56;
+        border-top-color: #9D6E56;
+        border-bottom-color: #9D6E56;
+        box-shadow: 0 0 5px #9D6e56;
+    }
+
+    label {
+        display: inline-block;
+        width: 190px;
+        color:#555;
+    }
+    
+    #seperator {
+        padding: 3px 0px 8px 40px;
+        display: block;
+        background: #B84702;
+        margin: #B84702;
+        border-radius: 5px;
+    }
+    
+    #optional{
+        font-size: 16px;
+        display: inline;
+        padding: 0;
+        background-color: #FFFFFF;
+        margin-top: 0;
+    }
+
+    #hiddenoptional{
+        font-size: 24px;
+        display: inline;
+        padding: 0;
+        background-color: #FFFFFF;
+        margin-top: 0;
+    }
+    
+    button {
+        background: #EBE6D9; /* Old browsers */
+        border:1px solid #9D6E56;
+        border-top-color:#9D6E56;
+        border-bottom-color:#9D6E56;
+        color:#9D6E56;
+        text-shadow:0 1px 0 #9D6E56;
+        font-size:.875em;
+        padding:8px 15px;
+        float: right;
+        width:150px;
+        border-radius:20px;
+        box-shadow:0 1px 0 #bbb, 0 1px 0 #9D6E56 inset;
+    }
+    button:active {
+        background: #9D6E56; /* Old browsers */
+        box-shadow:none;
+        color:#EBE6D9;
+        text-shadow:0 -1px 0 #1e3c5e;
+    }
+
+    #clear {
+        font-size:.8em;
+        padding:4px 10px;
+        float: right;
+        width:90px;
+        border-radius:20px;
+        box-shadow:0 1px 0 #bbb, 0 1px 0 #9D6E56 inset;
+    }
+    input.error, select.error {
+        border: 2px solid red;
+        background-color: #FFFFD5;
+        margin: 0px;
+        color: red;
+    }
+
+    div.formError {
+        display: none;
+        color: #FF0000;
+    }
+
+    div.error {
+        color: red;
+    }
+
+    label.error {
+        padding-left: 100px;
+        width: 300px;
+        display: block;
+        color: red;
+        font-style: italic;
+        font-weight: normal;
+    }
+    
+    #jobbox {
+        width:490px;
+        padding:10px;
+        border-top: 10px solid #B84702; 
+        border-left: 5px solid #B84702;
+        border-right: 5px solid #B84702;
+        border-bottom: 5px solid #B84702;
+        /*border-radius: 5px;*/
+        /*margin:10px;*/ 
+    }
+    #jobbox label {
+        width: 100px;
+        font-size: .8em;
+    }
+
+    #jobbox div {
+        width: 130px;
+        display: inline-block; /* IE7 */
+        *display: inline; /* IE7 */
+        *zoom: 1;
+        font-size: small;
+    }
+
