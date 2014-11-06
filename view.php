@@ -1,5 +1,5 @@
 <?php
-
+//just a comment
 session_start();
 $pagetitle = "Job ID: ".$_GET['job'];
 $quicklinks = False;
