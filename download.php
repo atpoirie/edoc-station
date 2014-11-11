@@ -1,6 +1,6 @@
 <?php
 
-require_once "/var/authscripts/ncu_auth.inc";
+//require_once "/var/authscripts/ncu_auth.inc";
 require_once "./include/jobclass.php";
 
 ncu_forcesecure();

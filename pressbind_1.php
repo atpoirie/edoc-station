@@ -2,13 +2,13 @@
 
 
 session_start();
-require_once "/var/authscripts/ncu_auth.inc";
+//require_once "/var/authscripts/ncu_auth.inc";
 $pagetitle = "Online Copy Center";
 $quicklinks = true;
 ncu_forcesecure();
 ncu_forceauth();
 
-require_once("../include/header.php");
+require_once("include/header.php");
 
 
 $uname = ncu_getusername();

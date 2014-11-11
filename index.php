@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once "/var/authscripts/ncu_auth.inc";
+////require_once "/var/authscripts/ncu_auth.inc";
 require_once "./include/jobclass.php";
 require_once "./include/copyclass.php";
 require_once "./include/pressclass.php";

@@ -8,7 +8,7 @@
 
 
 session_start();
-require_once "/var/authscripts/ncu_auth.inc";
+//require_once "/var/authscripts/ncu_auth.inc";
 require_once "./include/jobclass.php";
 
 ncu_forcesecure();
@@ -17,7 +17,7 @@ $uname = ncu_getusername();
 $aJob = new Job($uname);
 
 if (ncu_isstudent($uname) || !$aJob->isAdmin) {
-    include_once("../include/header.php");
+    include_once("include/header.php");
     echo "You are not authorized to view this page";
     require_once("../include/footer.php");
     return;

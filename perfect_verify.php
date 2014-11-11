@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-require_once "/var/authscripts/ncu_auth.inc";
+//require_once "/var/authscripts/ncu_auth.inc";
 require_once "./include/jobclass.php";
 require_once "./include/perfectclass.php";
 
@@ -14,7 +14,7 @@ ncu_forceauth();
 
 $uname = ncu_getusername();
 if (ncu_isstudent($uname)) {
-    include_once("../include/header.php");
+    include_once("include/header.php");
     echo "This system is for NCU employees only";
     require_once("../include/footer.php");
     return;
@@ -135,7 +135,7 @@ $aJob->status = "In the queue";
 $aJob->serialize();
 $time = 60 * 60 * 24 * 2 + time();
 setcookie('Perfect', $aJob->serial, $time);
-include_once("../include/header.php");
+include_once("include/header.php");
 ?>
 <link rel="stylesheet" type="text/css" href="css/copycenter.css">
 

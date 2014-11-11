@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once "/var/authscripts/ncu_auth.inc";
+//require_once "/var/authscripts/ncu_auth.inc";
 require_once "./include/jobclass.php";
 require_once "./include/copyclass.php";
 require_once "./include/perfectclass.php";
@@ -17,7 +17,7 @@ $uname = ncu_getusername();
 $aJob = new Job($uname);
 
 if (!$aJob->isAdmin) {
-    include_once("../include/header.php");
+    include_once("include/header.php");
     echo "You are not authorized to view this page";
     require_once("../include/footer.php");
     return;
@@ -99,7 +99,7 @@ if (isset($_GET['type']) && $_GET['type'] == 'job') {
             $bJob = new $aJob->jobType($uname);
             $bJob->get_job_by_id($_GET['job']);
             $bJob->view_job();
-            include_once("../include/header.php");
+            include_once("include/header.php");
             ?>
             <div id="inner_container">
                 <br/><br/>
@@ -239,7 +239,7 @@ if (isset($_GET['type']) && $_GET['type'] == 'job') {
 }
 
 
-include_once("../include/header.php");
+include_once("include/header.php");
 
 ?>
 <link rel="stylesheet" type="text/css" href="css/copycenter.css"/>

@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-require_once "/var/authscripts/ncu_auth.inc";
+//require_once "/var/authscripts/ncu_auth.inc";
 require_once "./include/jobclass.php";
 require_once "./include/copyclass.php";
 require_once "./include/perfectclass.php";
@@ -23,7 +23,7 @@ if (isset($_GET['view']) && $_GET['view'] != '') {
     if ($bJob->username == $uname || $aJob->isAdmin()){
         if (preg_match('/Complete/', $bJob->flag) || preg_match('/Cancel/', $bJob->flag) ) {
             $bJob->view_job();
-            require_once("../include/header.php");
+            require_once("include/header.php");
             ?>
             <link rel="stylesheet" type="text/css" href="css/copycenter.css"/>
             <div id="inner_container">
@@ -62,7 +62,7 @@ if (isset($_GET['view']) && $_GET['view'] != '') {
 
 function display_jobs($message = "") {
 
-require_once("../include/header.php");
+require_once("include/header.php");
 
 
 $uname = ncu_getusername();

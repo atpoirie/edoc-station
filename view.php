@@ -32,7 +32,7 @@ if ( strtolower($jobtype) == "copy")
 		copy_template($jobid, True);
 	else
 {
-		require_once("../include/header.php");
+		require_once("include/header.php");
 		copy_template($jobid);
 }
 }
@@ -44,7 +44,7 @@ elseif ( strtolower($jobtype) == "spiral")
 		spiral_template($jobid, True);
 	else
 	{
-		require_once("../include/header.php");
+		require_once("include/header.php");
 		spiral_template($jobid);
 	}
 }
@@ -54,14 +54,14 @@ elseif ( strtolower($jobtype) == "perfect")
         if ( isset($_GET['print']) && $_GET['print'] == 'Y')
             perfect_template($jobid, True);
         else {
-            require_once("../include/header.php");
+            require_once("include/header.php");
             perfect_template($jobid);
         }
 } elseif ( strtolower($jobtype) == "tape") {
     if ( isset($_GET['print']) && $_GET['print'] == 'Y')
         tape_template($jobid, True);
     else {
-        require_once("../include/header.php");
+        require_once("include/header.php");
         tape_template($jobid, True);
     }
 }

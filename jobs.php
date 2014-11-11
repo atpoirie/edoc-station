@@ -1,9 +1,9 @@
 <?php
 
 session_start();
-require_once "/var/authscripts/ncu_auth.inc";
+//require_once "/var/authscripts/ncu_auth.inc";
 $quicklinks = True;
-require_once("../include/header.php");
+require_once("include/header.php");
 
 ncu_forcesecure();
 ncu_forceauth();
