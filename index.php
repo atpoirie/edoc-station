@@ -64,7 +64,7 @@ $cJob = new Job($uname);
 if ($cJob->isAdmin) {
     header('Location: /unet/copycenter/admin.php');
 }
-include_once("../include/header.php");
+include_once("include/header.php");
 ?>
 
 <link rel="stylesheet" type="text/css" href="css/copycenter.css"/>
