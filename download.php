@@ -3,8 +3,8 @@
 //require_once "/var/authscripts/ncu_auth.inc";
 require_once "./include/jobclass.php";
 
-ncu_forcesecure();
-ncu_forceauth();
+//ncu_forcesecure();
+//ncu_forceauth();
 $uname = ncu_getusername();
 
 if (isset($_GET['jobid'])) {

@@ -1,5 +1,5 @@
 <?php
-require_once('MDB2.php');
+require_once('../MDB2/MDB2.php');
 require_once "copyclass.php";
 require_once "pressclass.php";
 require_once "perfectclass.php";
@@ -48,11 +48,11 @@ class Job {
     public $update;
     public $cost;
     public $uploadDir = "/files/directory";
-    private $dbServer = "db.server.com";
-    private $dbUser = "dbuser";
-    private $dbPass = "dbpass";
-    private $database = "db";
-    private $dbType = "mssql";
+    private $dbServer = "mysql1.freehosting.com";
+    private $dbUser = "anythin8_edoc";
+    private $dbPass = "vU07h67zsf";
+    private $database = "anythin8_edoc";
+    private $dbType = "mysql";
     protected $tablePrefix = "doccenter-";
     public $sql;
     public $isAdmin = FALSE;
@@ -81,11 +81,11 @@ class Job {
         $options = array();
         $this->sql =& MDB2::connect($dsn, $options);
         if (PEAR::isError($this->sql)) {
-            die($this->sql->getMessage());
+            die($this->sql->getMessage()." unable to connect to database ".$this->database);
         }
         $this->sql->setFetchMode(MDB2_FETCHMODE_ASSOC);
     }
-    
+     
     public function get_job_type_by_id($jobid) {
         if (!is_numeric($jobid)) {
             return False;
@@ -163,8 +163,13 @@ class Job {
     
     public function get_departments() {
         $res =& $this->sql->query("SELECT * FROM unet_mc_dept ORDER BY department ASC");
-        while ($row = $res->fetchRow()) {
-            $this->departmentList[] = $row['department'];
+        if (PEAR::isError($res)) {
+            echo $res->getMessage();
+            syslog(LOG_ERR, $res->getMessage() . " - " .$query);
+        } else {
+            while ($row = $res->fetchRow()) {
+                $this->departmentList[] = $row['department'];
+            }
         }
     }
     

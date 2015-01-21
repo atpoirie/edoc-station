@@ -10,18 +10,19 @@ require_once "./include/spiralclass.php";
 
 $pagetitle = "Online Copy Center";
 $quicklinks = true;
-ncu_forcesecure();
-ncu_forceauth();
+////ncu_forcesecure();
+////ncu_forceauth();
 
 
 
-$uname = ncu_getusername();
-
-if (ncu_isstudent($uname)) {
-    echo "This system is for NCU employees only";
-    require_once("../include/footer.php");
-    return;
-}
+//$uname = ncu_getusername();
+$uname = "test";
+//
+//if (ncu_isstudent($uname)) {
+//    echo "This system is for NCU employees only";
+//    require_once("../include/footer.php");
+//    return;
+//}
 
 
 //For handling job submissions

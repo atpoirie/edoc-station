@@ -5,8 +5,8 @@ session_start();
 $quicklinks = True;
 require_once("include/header.php");
 
-ncu_forcesecure();
-ncu_forceauth();
+//ncu_forcesecure();
+//ncu_forceauth();
 $uname = ncu_getusername();
 
 if ( ncu_isstudent($uname))

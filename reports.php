@@ -11,8 +11,8 @@ session_start();
 //require_once "/var/authscripts/ncu_auth.inc";
 require_once "./include/jobclass.php";
 
-ncu_forcesecure();
-ncu_forceauth();
+//ncu_forcesecure();
+//ncu_forceauth();
 $uname = ncu_getusername();
 $aJob = new Job($uname);
 

@@ -7,8 +7,8 @@ require_once "./include/tapeclass.php";
 
 $pagetitle = "Online Copy Center";
 $quicklinks = true;
-ncu_forcesecure();
-ncu_forceauth();
+//ncu_forcesecure();
+//ncu_forceauth();
 
 
 
@@ -395,6 +395,3 @@ include_once("include/header.php");
 <?php
 
 require_once("../include/footer.php");
-
-
-

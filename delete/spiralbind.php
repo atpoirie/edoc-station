@@ -5,8 +5,8 @@ session_start();
 require_once "/var/authscripts/ncu_auth.inc";
 $pagetitle = "Online Copy Center";
 $quicklinks = true;
-ncu_forcesecure();
-ncu_forceauth();
+//ncu_forcesecure();
+//ncu_forceauth();
 
 require_once("../include/header.php");
 

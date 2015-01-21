@@ -13,8 +13,8 @@ require_once "./include/perfectclass.php";
 require_once "./include/pressclass.php";
 require_once "./include/spiralclass.php";
 require_once "./include/tapeclass.php";
-ncu_forcesecure();
-ncu_forceauth();
+//ncu_forcesecure();
+//ncu_forceauth();
 $uname = ncu_getusername();
 $aJob = new Job($uname);
 

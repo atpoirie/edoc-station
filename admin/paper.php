@@ -3,8 +3,8 @@ session_start();
 require_once "/var/authscripts/ncu_auth.inc";
 $pagetitle = "Paper Administration";
 $quicklinks = true;
-ncu_forcesecure();
-ncu_forceauth();
+//ncu_forcesecure();
+//ncu_forceauth();
 
 require_once("../include/header.php");
 
@@ -251,7 +251,7 @@ $resCombinations = $sage->query($queryCombinations);
 				<td align="left"><? echo $combination["papersize"]; ?></td>
 				<td align="left"><? echo $combination["papertype"]; ?></td>
 				<td align="left"><? echo $combination["papercolor"]; ?></td>
-				<td align="left"><a href="paper.php?delpaper=<? echo $combination["paper_index"]; ?>"><img src="delete-icon.png" border="0"></a></td>
+				<td align="left"><a href="paper.php?delpaper=<? echo $combination["paper_index"]; ?>"><img src="image\delete-icon.png" border="0"></a></td>
 			</tr>
 			<tr height="2" bgcolor="#b84702"><td height="2" colspan="4"></td></tr>
 	<?

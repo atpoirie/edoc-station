@@ -4,8 +4,8 @@ session_start();
 require_once "/var/authscripts/ncu_auth.inc";
 $quicklinks = True;
 
-ncu_forcesecure();
-ncu_forceauth();
+//ncu_forcesecure();
+//ncu_forceauth();
 $uname = ncu_getusername();
 
 include_once("../include/header.php");

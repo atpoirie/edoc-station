@@ -5,8 +5,8 @@ require_once "/var/authscripts/ncu_auth.inc";
 $quicklinks = True;
 require_once("../include/header.php");
 
-ncu_forcesecure();
-ncu_forceauth();
+//ncu_forcesecure();
+//ncu_forceauth();
 $uname = ncu_getusername();
 
 if ( ncu_isstudent($uname))
@@ -176,7 +176,7 @@ $submitted = substr($row[3], 0, 11);
 		else
 		{
 	?>
-      	<td><a href="jobs.php?complete=<? echo $row[0]; ?>"><img src="complete.png" alt="Mark this job completed" title="Mark this job completed" style="border:0px;"/></a></td>
+      	<td><a href="jobs.php?complete=<? echo $row[0]; ?>"><img src="image/complete.png" alt="Mark this job completed" title="Mark this job completed" style="border:0px;"/></a></td>
 	<?
      	}
 	?>
@@ -209,7 +209,7 @@ function display_spiral($jobid)
 	      <td style="padding:6px;"><strong>Due: </strong><? echo $date; ?></td>
 	   </tr>
 	   <tr>
-	      <td><a href="jobs.php?complete=<? echo $row[0]; ?>"><img src="complete.png"  alt="Mark this job completed" title="Mark this job completed" style="border:0px;"/></a></td>
+	      <td><a href="jobs.php?complete=<? echo $row[0]; ?>"><img src="image/complete.png"  alt="Mark this job completed" title="Mark this job completed" style="border:0px;"/></a></td>
 	      <td><a href="view.php?job=<? echo $row[0]; ?>"><img src="view.png" alt="View job" title="View job details" style="border:0px;"/></a></td>
 	   </tr>
 	</table>

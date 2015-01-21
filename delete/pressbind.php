@@ -5,8 +5,8 @@ session_start();
 require_once "/var/authscripts/ncu_auth.inc";
 $pagetitle = "Online Copy Center";
 $quicklinks = true;
-ncu_forcesecure();
-ncu_forceauth();
+//ncu_forcesecure();
+//ncu_forceauth();
 
 require_once("../include/header.php");
 
@@ -121,7 +121,7 @@ form table td {
 <SCRIPT type="text/javascript" src="../include/jquery.js"></SCRIPT>
 <SCRIPT type="text/javascript" src="../include/jquery.validate.js"></SCRIPT>
 <link rel="stylesheet" type="text/css" href="anytime.css" />
-<SCRIPT type="text/javascript" src="anytime.js"></SCRIPT>
+<SCRIPT type="text/javascript" src="./script/anytime.js"></SCRIPT>
 
 <script language="javascript">
 function select_all()

@@ -7,8 +7,8 @@ require_once "./include/copyclass.php";
 
 $pagetitle = "Online Copy Center";
 $quicklinks = true;
-ncu_forcesecure();
-ncu_forceauth();
+//ncu_forcesecure();
+//ncu_forceauth();
 
 
 $uname = ncu_getusername();

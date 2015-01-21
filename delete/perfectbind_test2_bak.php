@@ -6,8 +6,8 @@ require_once "./include/perfectclass.php";
 
 $pagetitle = "Online Copy Center";
 $quicklinks = true;
-ncu_forcesecure();
-ncu_forceauth();
+//ncu_forcesecure();
+//ncu_forceauth();
 
 require_once("../include/header.php");
 
@@ -39,7 +39,7 @@ if(isset($_POST['clear']) && $_POST['clear'] == 'reset') {
 <SCRIPT type="text/javascript" src="../include/jquery.validate.js"></SCRIPT>
 <script type="text/javascript" src="script/jobfeatures.js"></script>
 <link rel="stylesheet" type="text/css" href="css/anytime.css" />
-<SCRIPT type="text/javascript" src="script/anytime.js"></SCRIPT>
+<SCRIPT type="text/javascript" src="./script/anytime.js"></SCRIPT>
 
 
 

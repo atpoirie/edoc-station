@@ -11,8 +11,8 @@ require_once "./include/tapeclass.php";
 
 $pagetitle = "Online Copy Center";
 $quicklinks = true;
-ncu_forcesecure();
-ncu_forceauth();
+//ncu_forcesecure();
+//ncu_forceauth();
 $uname = ncu_getusername();
 $aJob = new Job($uname);
 

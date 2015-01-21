@@ -11,8 +11,8 @@ require_once "./include/spiralclass.php";
 
 $pagetitle = "Online Copy Center";
 $quicklinks = true;
-ncu_forcesecure();
-ncu_forceauth();
+//ncu_forcesecure();
+//ncu_forceauth();
 $uname = ncu_getusername();
 
 if (isset($_GET['view']) && $_GET['view'] != '') {

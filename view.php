@@ -4,12 +4,12 @@ session_start();
 $pagetitle = "Job ID: ".$_GET['job'];
 $quicklinks = False;
 
-//ncu_forcesecure();
-//ncu_forceauth();
+////ncu_forcesecure();
+////ncu_forceauth();
 
 require_once("/var/authscripts/ncu_auth.inc");
-ncu_forcesecure();
-ncu_forceauth();
+//ncu_forcesecure();
+//ncu_forceauth();
 $uname = ncu_getusername();
 
 if ( ncu_isstudent($uname))

@@ -6,8 +6,8 @@ require_once "/var/www/unet2/copycenter/include/copyclass.php";
 
 $pagetitle = "Online Copy Center";
 $quicklinks = true;
-ncu_forcesecure();
-ncu_forceauth();
+//ncu_forcesecure();
+//ncu_forceauth();
 
 
 
@@ -102,7 +102,7 @@ function get_earliest() {
 <SCRIPT type="text/javascript" src="../include/jquery.js"></SCRIPT>
 <SCRIPT type="text/javascript" src="../include/jquery.validate.js"></SCRIPT>
 <link rel="stylesheet" type="text/css" href="anytime.css" />
-<script type="text/javascript" src="anytime.js"></script>
+<script type="text/javascript" src="./script/anytime.js"></script>
 
 
 

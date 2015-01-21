@@ -5,8 +5,8 @@ require_once "./include/jobclass.php";
 require_once "./include/spiralclass.php";
 $pagetitle = "Online Copy Center";
 $quicklinks = true;
-ncu_forcesecure();
-ncu_forceauth();
+//ncu_forcesecure();
+//ncu_forceauth();
 
 require_once("../include/header.php");
 
